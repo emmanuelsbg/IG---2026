@@ -1,0 +1,36 @@
+/* dos selectores de clase */
+.titulo {
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+.unoydos {
+    background-color: rgb(240, 153, 83);
+}
+
+
+/* dos selectores de identificador (FALTA UNO) */
+#presentacion {
+    text-align: center;
+}
+
+
+/* dos selectores de etiqueta */
+p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center; /* deja el menu nav centrado */
+}
+
+nav li {
+    margin-right: 20px; /*esto hace más espacio entre los <li> del nav*/
+}
+
+nav a {   /* al seleccionar el "<a>" estamos modificando directamente la lista de los items */
+    text-decoration: none; /* esto le saca la barrita de abajo a los links */
+    padding: 5px; /* este padding separa los links para que no se vean todos pegados */
+}

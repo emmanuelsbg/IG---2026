@@ -1,0 +1,267 @@
+
+/* estilos_moderno.css
+   Nueva hoja de estilos para el sitio de Breaking Bad.
+   Diseño minimalista, moderno y adaptable.
+*/
+
+:root {
+    --fondo: #0f1115;
+    --superficie: #161a22;
+    --superficie-2: #1d2330;
+    --texto: #edf1f7;
+    --texto-suave: #b7c0cf;
+    --acento: #8bd3dd;
+    --acento-2: #c7f0f7;
+    --borde: rgba(255, 255, 255, 0.10);
+    --sombra: 0 18px 40px rgba(0, 0, 0, 0.35);
+    --radio: 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: var(--texto);
+    background:
+        radial-gradient(circle at top, rgba(139, 211, 221, 0.10), transparent 35%),
+        linear-gradient(180deg, #0b0d11 0%, var(--fondo) 100%);
+    line-height: 1.7;
+    letter-spacing: 0.2px;
+}
+
+/* Fondo alternativo para las páginas que ya tenían esa clase */
+body.unoydos {
+    background:
+        radial-gradient(circle at top left, rgba(199, 240, 247, 0.11), transparent 30%),
+        radial-gradient(circle at bottom right, rgba(139, 211, 221, 0.08), transparent 28%),
+        linear-gradient(180deg, #090b0f 0%, #11151c 100%);
+}
+
+/* Contenedor visual general sin tocar el HTML */
+header,
+main,
+footer {
+    width: min(1100px, calc(100% - 32px));
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    margin-top: 16px;
+    padding: 22px 22px 18px;
+    background: rgba(22, 26, 34, 0.82);
+    backdrop-filter: blur(14px);
+    border: 1px solid var(--borde);
+    border-radius: 24px;
+    box-shadow: var(--sombra);
+}
+
+h1,
+h2,
+h3 {
+    margin-top: 0;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+}
+
+h1 {
+    margin-bottom: 16px;
+    font-size: clamp(1.5rem, 2.5vw, 2.35rem);
+}
+
+#presentacion {
+    color: var(--acento-2);
+}
+
+.titulo {
+    display: inline-block;
+    margin-bottom: 18px;
+    padding: 8px 14px;
+    border: 1px solid rgba(139, 211, 221, 0.25);
+    border-radius: 999px;
+    background: rgba(139, 211, 221, 0.07);
+    color: var(--acento-2);
+    font-size: 0.92rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+}
+
+nav.navegacion {
+    margin-top: 10px;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    border-radius: 999px;
+    border: 1px solid var(--borde);
+    background: rgba(255, 255, 255, 0.03);
+    color: var(--texto);
+    text-decoration: none;
+    transition: transform 180ms ease, background-color 180ms ease, border-color 180ms ease, color 180ms ease;
+}
+
+nav a:hover,
+nav a:focus-visible {
+    transform: translateY(-1px);
+    background: rgba(139, 211, 221, 0.12);
+    border-color: rgba(139, 211, 221, 0.35);
+    color: var(--acento-2);
+    outline: none;
+}
+
+main {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    padding: 28px 24px;
+    background: rgba(22, 26, 34, 0.92);
+    border: 1px solid var(--borde);
+    border-radius: 28px;
+    box-shadow: var(--sombra);
+}
+
+main > p {
+    max-width: 72ch;
+    color: var(--texto-suave);
+    margin: 0 0 16px;
+}
+
+main > img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 22px 0;
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.28);
+    object-fit: cover;
+}
+
+main ul {
+    margin: 16px 0 20px;
+    padding-left: 20px;
+    color: var(--texto-suave);
+}
+
+main ul li {
+    margin: 10px 0;
+    padding-left: 6px;
+}
+
+main ul li::marker {
+    color: var(--acento);
+}
+
+main a {
+    color: var(--acento-2);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+}
+
+main a:hover,
+main a:focus-visible {
+    color: var(--texto);
+    outline: none;
+}
+
+em {
+    color: var(--acento-2);
+    font-style: italic;
+}
+
+footer {
+    margin-bottom: 18px;
+    padding: 0 0 8px;
+}
+
+footer address {
+    display: block;
+    padding: 14px 18px;
+    border-radius: 18px;
+    border: 1px dashed rgba(255, 255, 255, 0.14);
+    background: rgba(255, 255, 255, 0.02);
+    color: var(--texto-suave);
+    font-style: normal;
+    min-height: 1rem;
+}
+
+/* Selector avanzado: los links externos abren con aire de "salgo de acá" */
+main a[target="_blank"]::after {
+    content: "↗";
+    font-size: 0.9em;
+}
+
+/* Cuando hay una imagen seguida por un párrafo, el texto respira más */
+main img + p {
+    margin-top: 6px;
+}
+
+/* Si un párrafo está dentro del main, pero no es el primero, gana aire */
+main p + p {
+    margin-top: 8px;
+}
+
+/* Microdetalle visual para la página principal */
+body.unoydos main img {
+    border-radius: 22px;
+}
+
+/* Adaptación a pantallas chicas */
+@media (max-width: 700px) {
+    header,
+    main {
+        width: min(100% - 18px, 1000px);
+        border-radius: 18px;
+    }
+
+    header {
+        margin-top: 8px;
+        padding: 18px 16px 14px;
+    }
+
+    main {
+        padding: 20px 16px;
+    }
+
+    nav ul {
+        gap: 8px;
+    }
+
+    nav a {
+        width: 100%;
+        justify-content: center;
+    }
+
+    main > img {
+        margin: 18px 0;
+    }
+}
+
+/*El contenido textual de este sitio ha sido elaborado con asistencia de Inteligencia Artificial como herramienta de apoyo.*/
