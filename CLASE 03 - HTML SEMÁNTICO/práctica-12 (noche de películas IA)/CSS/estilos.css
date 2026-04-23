@@ -1,0 +1,146 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY GENERAL */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    color: #fff;
+    background: radial-gradient(circle at top, #1a001f, #000);
+    min-height: 100vh;
+}
+
+/* NAV */
+header {
+    background: #000;
+    padding: 20px;
+    border-bottom: 2px solid #ff00c8;
+    box-shadow: 0 0 15px #ff00c8;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #ff00c8;
+    text-shadow: 0 0 10px #ff00c8, 0 0 20px #00fff7;
+}
+
+/* NAV LINKS */
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    margin-top: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #00fff7;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ff00c8;
+    text-shadow: 0 0 10px #ff00c8;
+}
+
+/* MAIN */
+main {
+    padding: 30px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* TITULOS */
+h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    color: #00fff7;
+    text-shadow: 0 0 10px #00fff7;
+}
+
+h3 {
+    margin-top: 30px;
+    color: #ffcc00;
+    text-shadow: 0 0 8px #ffcc00;
+}
+
+h4 {
+    margin-top: 20px;
+    color: #ff00c8;
+}
+
+/* PARRAFOS */
+p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* LISTAS */
+ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+/* IMAGENES */
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    transition: 0.4s;
+    box-shadow: 0 0 15px rgba(255,0,200,0.5);
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #00fff7;
+}
+
+/* HR */
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #ff00c8, transparent);
+    margin: 25px 0;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 1px solid #ff00c8;
+    color: #aaa;
+}
+
+/* ===== VARIACIONES POR PAGINA ===== */
+
+/* PAGINA 1 - INTRO */
+body.index {
+    background: radial-gradient(circle, #000, #1a001f);
+}
+
+/* PAGINA 2 - ESCENARIOS */
+body.dos {
+    background: radial-gradient(circle, #001f1f, #000);
+}
+
+/* PAGINA 3 - ACTORES */
+body.tres {
+    background: radial-gradient(circle, #1f0000, #000);
+}
+
+/* PAGINA 4 - HUMOR */
+body.cuatro {
+    background: radial-gradient(circle, #1f1a00, #000);
+}
+
+/* PAGINA 5 - SIMILARES */
+body.cinco {
+    background: radial-gradient(circle, #00101f, #000);
+}
